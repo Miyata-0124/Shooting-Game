@@ -20,25 +20,25 @@ public class PlayerMove : MonoBehaviour
         if(Input.GetKey(KeyCode.RightArrow))
         {
             //‰E‚É0.01f
-            pos.x += 0.01f;
+            pos.x += 0.05f;
         }
         //¶–îˆó‚ª‰Ÿ‚³‚ê‚½‚Æ‚«
         if(Input.GetKey(KeyCode.LeftArrow))
         {
             //¶‚É0.01f
-            pos.x -= 0.01f;
+            pos.x -= 0.05f;
         }
         //ã–îˆó‚ª‰Ÿ‚³‚ê‚½‚Æ‚«
         if(Input.GetKey(KeyCode.UpArrow))
         {
             //ã‚É0.01f
-            pos.z += 0.01f;
+            pos.z += 0.05f;
         }
         //‰º–îˆó‚ª‰Ÿ‚³‚ê‚½‚Æ‚«
         if(Input.GetKey(KeyCode.DownArrow))
         {
             //‰º‚É0.01f
-            pos.z -= 0.01f;
+            pos.z -= 0.05f;
         }
         transform.position=new Vector3(pos.x, pos.y, pos.z);
     }
